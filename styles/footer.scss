@@ -1,0 +1,52 @@
+.footer {
+  background: #F2F2F4;
+
+  &__firstrow {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 15px;
+    padding-top: 32px;
+    padding-right: 73px;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 40px;
+    padding-top: 42.5px;
+    padding-left: 78.5px;
+
+    &item {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      color: #010932;
+    }
+
+  }
+
+  &__secondrow {
+    padding-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+  }
+
+  &__column2 {
+    margin-right: 200px;
+  }
+
+  &__column3 {
+    display: flex;
+    align-items: flex-end;
+    gap: 48px;
+    padding-right: 80px;
+    margin-bottom: 16px;
+  }
+
+}
