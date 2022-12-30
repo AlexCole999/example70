@@ -187,7 +187,7 @@ select {
 }
 
 .home__screen1 {
-  background: url(../img/screen1dark.jpg);
+  background: url(./img/screen1dark.jpg);
   background-size: cover;
 }
 .home__screen1content {
