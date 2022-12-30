@@ -1,0 +1,8 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+
+  &__center {
+    max-width: 1440px;
+  }
+}

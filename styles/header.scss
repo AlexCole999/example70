@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+
+  &__logo {
+    margin: 36px 0px 60px 80px;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: center;
+    margin-left: 416px;
+
+    &item {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: rgba(8, 18, 71, 0.7);
+      margin-right: 20px;
+    }
+
+    &divider {
+      margin-left: 5px;
+      height: 45%;
+      background-color: rgba(8, 18, 71, 0.7);
+      width: 2px;
+    }
+
+    &button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 40px;
+      width: 131px;
+      height: 44px;
+      border: 1px solid rgba(8, 18, 71, 0.7);
+      border-radius: 8px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(8, 18, 71, 0.7);
+    }
+
+  }
+
+}
