@@ -89,4 +89,207 @@
 
   }
 
+  &__screen2 {
+    margin-left: 92px;
+    margin-right: 57px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+
+    &title {
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 68px;
+      color: #010932;
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    &text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 182.52%;
+      text-align: center;
+      color: rgba(1, 9, 50, 0.85);
+      max-width: 1300PX;
+    }
+
+    &photos {
+      margin-top: 48px;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+  &__screen3 {
+    margin-left: 92px;
+    margin-right: 57px;
+    margin-top: 168px;
+
+    &title {
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 68px;
+      color: #010932;
+      text-align: center;
+    }
+
+    &content {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 42px;
+      margin-top: 75px;
+    }
+
+    &rightside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 182.52%;
+      color: rgba(1, 9, 50, 0.85);
+      max-width: 554px;
+    }
+
+    &button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      background: #010932;
+      border: 1px solid #010932;
+      border-radius: 31px;
+      width: 193px;
+      height: 62px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 182.52%;
+      color: #FFFFFF;
+    }
+
+  }
+
+  &__screen4 {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 193px;
+
+    &title {
+      text-align: center;
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 68px;
+      color: #010932;
+    }
+
+    &content {
+      display: flex;
+      justify-content: center;
+      gap: 82px;
+      margin-top: 90px;
+    }
+
+    &leftside {
+      max-width: 555px;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 182.52%;
+      color: rgba(1, 9, 50, 0.85);
+
+      &divider {
+        width: 60px;
+        height: 3px;
+        background-color: #010932;
+        margin: 52px 0px;
+      }
+
+    }
+
+  }
+
+  &__screen5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 312px;
+    background: url(./img/screen5bcg.jpg);
+    background-size: cover;
+
+    &title {
+      text-align: center;
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 50px;
+      line-height: 68px;
+      color: #010932;
+      margin-top: 48px;
+      max-width: 645px;
+    }
+
+    &content {
+      margin-top: 66px;
+      margin-bottom: 90px;
+      display: flex;
+      column-gap: 60px;
+
+      &leftside {}
+
+      &rightside {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+      }
+
+    }
+
+    &text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 182.52%;
+      color: rgba(1, 9, 50, 0.85);
+      max-width: 600px;
+    }
+
+    &elem {
+
+      margin-top: 24px;
+      display: flex;
+      column-gap: 24px;
+
+      &text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 182.52%;
+        color: rgba(1, 9, 50, 0.85);
+      }
+
+    }
+
+  }
+
 }
