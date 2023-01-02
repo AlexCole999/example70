@@ -161,6 +161,11 @@
     display: flex;
     flex-direction: column;
 
+    @media screen and (max-width:1050px) {
+      align-items: center;
+      mask-repeat: 20px;
+    }
+
     &title {
       font-family: 'Patrick Hand';
       font-style: normal;
@@ -170,6 +175,12 @@
       color: #010932;
       margin-top: 32px;
       text-align: center;
+
+      @media screen and (max-width:1050px) {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+      }
     }
 
     &text {
@@ -180,13 +191,26 @@
       line-height: 182.52%;
       text-align: center;
       color: rgba(1, 9, 50, 0.85);
-      max-width: 1300PX;
+      max-width: 1300px;
+
+      @media screen and (max-width:1050px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 182.52%;
+        text-align: center;
+        max-width: 352px;
+        margin-top: 16px;
+      }
     }
 
     &photos {
       margin-top: 48px;
       display: flex;
       justify-content: center;
+
+      @media screen and (max-width:1050px) {
+        width: 50%;
+      }
     }
 
   }

@@ -340,6 +340,12 @@ select {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 1050px) {
+  .home__screen2 {
+    align-items: center;
+    mask-repeat: 20px;
+  }
+}
 .home__screen2title {
   font-family: 'Patrick Hand';
   font-style: normal;
@@ -350,6 +356,13 @@ select {
   margin-top: 32px;
   text-align: center;
 }
+@media screen and (max-width: 1050px) {
+  .home__screen2title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+  }
+}
 .home__screen2text {
   font-family: 'Inter';
   font-style: normal;
@@ -358,12 +371,27 @@ select {
   line-height: 182.52%;
   text-align: center;
   color: rgba(1, 9, 50, 0.85);
-  max-width: 1300PX;
+  max-width: 1300px;
+}
+@media screen and (max-width: 1050px) {
+  .home__screen2text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 182.52%;
+    text-align: center;
+    max-width: 352px;
+    margin-top: 16px;
+  }
 }
 .home__screen2photos {
   margin-top: 48px;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 1050px) {
+  .home__screen2photos {
+    width: 50%;
+  }
 }
 .home__screen3 {
   margin-left: 92px;
