@@ -26,6 +26,7 @@
           flex-direction: column;
           align-items: center;
           margin: 40px;
+          margin-top: 0px;
         }
       }
 
@@ -33,9 +34,10 @@
         margin: 55px 6.6% 55px 38px;
 
         @media screen and (max-width:1050px) {
-          margin: 40px;
           display: flex;
           justify-content: center;
+          margin-top: 25px;
+          margin-bottom: 10px;
         }
 
         img {
@@ -44,7 +46,7 @@
           border-radius: 10px;
 
           @media screen and (max-width:1050px) {
-            width: 100%;
+            max-width: 221px;
           }
         }
       }
@@ -82,6 +84,7 @@
           text-align: center;
           color: #FFFFFF;
           max-width: 350px;
+          margin-top: 8px;
         }
       }
 
@@ -91,6 +94,10 @@
       margin-top: 48px;
       display: flex;
       gap: 40px;
+
+      @media screen and (max-width:1050px) {
+        margin-top: 18px;
+      }
     }
 
     &button1 {
@@ -209,7 +216,7 @@
       justify-content: center;
 
       @media screen and (max-width:1050px) {
-        width: 50%;
+        width: 342px;
       }
     }
 
@@ -220,6 +227,15 @@
     margin-right: 57px;
     margin-top: 168px;
 
+    @media screen and (max-width:1050px) {
+      margin: 24px;
+      margin-top: 48px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     &title {
       font-family: 'Patrick Hand';
       font-style: normal;
@@ -228,6 +244,13 @@
       line-height: 68px;
       color: #010932;
       text-align: center;
+
+      @media screen and (max-width:1050px) {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+        color: #010932;
+      }
     }
 
     &content {
@@ -236,6 +259,12 @@
       flex-wrap: wrap;
       gap: 42px;
       margin-top: 75px;
+
+      @media screen and (max-width:1050px) {
+        max-width: 288px;
+        margin-top: 24px;
+        gap: 24px;
+      }
     }
 
     &rightside {
@@ -252,6 +281,13 @@
       line-height: 182.52%;
       color: rgba(1, 9, 50, 0.85);
       max-width: 554px;
+
+      @media screen and (max-width:1050px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 182.52%;
+        text-align: center;
+      }
     }
 
     &button {
@@ -270,6 +306,15 @@
       font-size: 18px;
       line-height: 182.52%;
       color: #FFFFFF;
+
+      @media screen and (max-width:1050px) {
+        width: 147.1px;
+        height: 38px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 182.52%;
+        margin-top: 25px;
+      }
     }
 
   }
@@ -279,6 +324,15 @@
     margin-right: 80px;
     margin-top: 193px;
 
+    @media screen and (max-width:1050px) {
+      margin-top: 48px;
+      margin-left: 24px;
+      margin-right: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     &title {
       text-align: center;
       font-family: 'Patrick Hand';
@@ -287,6 +341,12 @@
       font-size: 50px;
       line-height: 68px;
       color: #010932;
+
+      @media screen and (max-width:1050px) {
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 43px;
+      }
     }
 
     &content {
@@ -294,6 +354,13 @@
       justify-content: center;
       gap: 82px;
       margin-top: 90px;
+
+      @media screen and (max-width:1050px) {
+        flex-direction: column-reverse;
+        max-width: 342px;
+        gap: 24px;
+        margin-top: 24px;
+      }
     }
 
     &leftside {
@@ -305,11 +372,23 @@
       line-height: 182.52%;
       color: rgba(1, 9, 50, 0.85);
 
+      @media screen and (max-width:1050px) {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 182.52%;
+        text-align: center;
+      }
+
+
       &divider {
         width: 60px;
         height: 3px;
         background-color: #010932;
         margin: 52px 0px;
+
+        @media screen and (max-width:1050px) {
+          display: none;
+        }
       }
 
     }
