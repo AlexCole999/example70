@@ -577,6 +577,12 @@ select {
   background: url(./img/screen5bcg.jpg);
   background-size: cover;
 }
+@media screen and (max-width: 1050px) {
+  .home__screen5 {
+    background: none;
+    background-color: rgba(1, 9, 50, 0.03);
+  }
+}
 .home__screen5title {
   text-align: center;
   font-family: 'Patrick Hand';
@@ -588,11 +594,28 @@ select {
   margin-top: 48px;
   max-width: 645px;
 }
+@media screen and (max-width: 1050px) {
+  .home__screen5title {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    max-width: 332px;
+    text-align: start;
+    padding-left: 10px;
+  }
+}
 .home__screen5content {
   margin-top: 66px;
   margin-bottom: 90px;
   display: flex;
   column-gap: 60px;
+}
+@media screen and (max-width: 1050px) {
+  .home__screen5content {
+    margin-top: 24px;
+    max-width: 342px;
+    flex-direction: column;
+  }
 }
 .home__screen5contentrightside {
   display: flex;
@@ -608,10 +631,33 @@ select {
   color: rgba(1, 9, 50, 0.85);
   max-width: 600px;
 }
+@media screen and (max-width: 1050px) {
+  .home__screen5text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 182.52%;
+    margin-top: 24px;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .home__screen5elems {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-height: 127px;
+    column-gap: 30px;
+  }
+}
 .home__screen5elem {
   margin-top: 24px;
   display: flex;
   column-gap: 24px;
+}
+@media screen and (max-width: 1050px) {
+  .home__screen5elem img {
+    width: 28px;
+    height: 28px;
+  }
 }
 .home__screen5elemtext {
   font-family: 'Inter';
@@ -620,6 +666,13 @@ select {
   font-size: 24px;
   line-height: 182.52%;
   color: rgba(1, 9, 50, 0.85);
+}
+@media screen and (max-width: 1050px) {
+  .home__screen5elemtext {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 182.52%;
+  }
 }
 .home__screen6title {
   margin-top: 175px;
