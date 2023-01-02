@@ -4,24 +4,48 @@
     background: url(./img/screen1dark.jpg);
     background-size: cover;
 
+
+
     &content {
       display: flex;
       top: 0px;
       left: 0px;
 
+      @media screen and (max-width:1050px) {
+        flex-direction: column-reverse;
+        align-items: center;
+      }
+
       &leftside {
         margin-top: 117px;
         margin-left: 80px;
         margin-bottom: 117px;
+
+        @media screen and (max-width:1050px) {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 40px;
+        }
       }
 
       &rightside {
         margin: 55px 6.6% 55px 38px;
 
+        @media screen and (max-width:1050px) {
+          margin: 40px;
+          display: flex;
+          justify-content: center;
+        }
+
         img {
           width: 100%;
           height: 100%;
           border-radius: 10px;
+
+          @media screen and (max-width:1050px) {
+            width: 100%;
+          }
         }
       }
 
@@ -32,6 +56,13 @@
         font-size: 50px;
         line-height: 68px;
         color: #FFFFFF;
+
+        @media screen and (max-width:1050px) {
+          text-align: center;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 32px;
+        }
       }
 
       &text {
@@ -43,6 +74,15 @@
         font-size: 18px;
         line-height: 182.52%;
         color: #FFFFFF;
+
+        @media screen and (max-width:1050px) {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 182.52%;
+          text-align: center;
+          color: #FFFFFF;
+          max-width: 350px;
+        }
       }
 
     }
@@ -67,6 +107,22 @@
       font-size: 18px;
       line-height: 182.52%;
       color: #010932;
+
+      &arrow {
+        @media screen and (max-width:1050px) {
+          width: 9px;
+          height: 10px;
+        }
+      }
+
+      @media screen and (max-width:1050px) {
+        width: 147px;
+        height: 38px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 182.52%;
+        color: #010932;
+      }
     }
 
     &button2 {
@@ -85,6 +141,15 @@
       font-size: 18px;
       line-height: 182.52%;
       color: #FFFFFF;
+
+      @media screen and (max-width:1050px) {
+        width: 147px;
+        height: 38px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 182.52%;
+        color: #FFFFFF;
+      }
     }
 
   }
