@@ -105,10 +105,21 @@ select {
 .header__logo {
   margin: 36px 0px 60px 80px;
 }
+@media screen and (max-width: 1050px) {
+  .header__logo {
+    width: 75px;
+    height: 55px;
+  }
+}
 .header__menu {
   display: flex;
   align-items: center;
   margin-right: 80px;
+}
+@media screen and (max-width: 1050px) {
+  .header__menu {
+    display: none;
+  }
 }
 .header__menuitem {
   font-family: 'Poppins';
@@ -140,6 +151,17 @@ select {
   font-size: 16px;
   line-height: 24px;
   color: rgba(8, 18, 71, 0.7);
+}
+.header__button {
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .header__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+  }
 }
 
 .footer {

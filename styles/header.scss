@@ -4,12 +4,21 @@
 
   &__logo {
     margin: 36px 0px 60px 80px;
+
+    @media screen and (max-width:1050px) {
+      width: 75px;
+      height: 55px;
+    }
   }
 
   &__menu {
     display: flex;
     align-items: center;
     margin-right: 80px;
+
+    @media screen and (max-width:1050px) {
+      display: none;
+    }
 
     &item {
       font-family: 'Poppins';
@@ -45,6 +54,17 @@
       color: rgba(8, 18, 71, 0.7);
     }
 
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (max-width:1050px) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 25px;
+    }
   }
 
 }
