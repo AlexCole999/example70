@@ -199,3 +199,14 @@ select {
   padding-right: 80px;
   margin-bottom: 16px;
 }
+
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  background-color: aqua;
+}
