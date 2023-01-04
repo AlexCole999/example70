@@ -1,0 +1,52 @@
+.openedmenu {
+  display: none;
+  position: fixed;
+  right: 0px;
+  background: linear-gradient(180deg, #000000 0%, rgba(8, 18, 71, 0.7) 100%);
+  width: 315px;
+  height: 100vh;
+
+  &__button {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 12px;
+    margin: 36px 25px 40px 0px;
+
+    &text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #FFFFFF;
+    }
+  }
+
+  &list {}
+
+  &__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 16px 24px;
+    width: 266px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    &text {
+      padding-left: 24px;
+    }
+  }
+
+}
