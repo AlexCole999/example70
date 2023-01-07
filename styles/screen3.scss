@@ -49,7 +49,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: end;
-    margin-left: 42px;
+
+    @media screen and (min-width:1041px) {
+      margin-left: 42px;
+    }
+
   }
 
   &__text {
