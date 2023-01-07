@@ -6,6 +6,10 @@
   background-color: #fff;
   margin-top: 48px;
 
+  @media screen and (min-width:1041px) {
+    margin-top: 193px;
+  }
+
   &__title {
     font-family: 'Patrick Hand';
     font-style: normal;
@@ -13,11 +17,25 @@
     font-size: 32px;
     line-height: 43px;
     color: #010932;
+
+    @media screen and (min-width:1041px) {
+      font-size: 50px;
+      line-height: 68px;
+    }
+
   }
 
   &__content {
     display: flex;
     flex-direction: column-reverse;
+
+    @media screen and (min-width:1041px) {
+      flex-direction: row;
+      margin-top: 90px;
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+
   }
 
   &__leftside {
@@ -26,6 +44,12 @@
     margin-left: 24px;
     display: flex;
     flex-direction: column;
+
+    @media screen and (min-width:1041px) {
+      max-width: 555px;
+      margin: 0;
+    }
+
   }
 
   &__textrow1 {
@@ -36,9 +60,29 @@
     line-height: 182.52%;
     text-align: center;
     color: rgba(1, 9, 50, 0.85);
+
+    @media screen and (min-width:1041px) {
+      text-align: left;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 182.52%;
+      color: rgba(1, 9, 50, 0.85);
+    }
   }
 
-  &__rowsdivider {}
+  &__rowsdivider {
+    display: none;
+
+    @media screen and (min-width:1041px) {
+      display: block;
+      width: 58px;
+      height: 3px;
+      background-color: #010932;
+      margin: 58px 0px;
+    }
+  }
 
   &__textrow2 {
     font-family: 'Inter';
@@ -48,6 +92,16 @@
     line-height: 182.52%;
     text-align: center;
     color: rgba(1, 9, 50, 0.85);
+
+    @media screen and (min-width:1041px) {
+      text-align: left;
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 182.52%;
+      color: rgba(1, 9, 50, 0.85);
+    }
   }
 
   &__rightside {
@@ -55,6 +109,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width:1041px) {
+      margin: 0;
+      margin-left: 82px;
+    }
   }
 
 }
