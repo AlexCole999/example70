@@ -1,5 +1,4 @@
 .openedmenu {
-  display: none;
   position: fixed;
   right: 0px;
   background: linear-gradient(180deg, #000000 0%, rgba(8, 18, 71, 0.7) 100%);
@@ -49,4 +48,8 @@
     }
   }
 
+}
+
+.display-none {
+  display: none;
 }
