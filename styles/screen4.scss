@@ -1,0 +1,60 @@
+.screen4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  margin-top: 48px;
+
+  &__title {
+    font-family: 'Patrick Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: #010932;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__leftside {
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__textrow1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 182.52%;
+    text-align: center;
+    color: rgba(1, 9, 50, 0.85);
+  }
+
+  &__rowsdivider {}
+
+  &__textrow2 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 182.52%;
+    text-align: center;
+    color: rgba(1, 9, 50, 0.85);
+  }
+
+  &__rightside {
+    margin: 24px 23px 0px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+}
