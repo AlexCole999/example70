@@ -270,7 +270,7 @@ body {
   height: 38px;
   background: #FFFFFF;
   border-radius: 31px;
-  column-gap: 19px;
+  column-gap: 8%;
 }
 @media screen and (min-width: 1041px) {
   .screen1__buttonsleft {
