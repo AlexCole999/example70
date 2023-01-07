@@ -370,6 +370,111 @@ body {
   }
 }
 
+.screen3 {
+  width: 100%;
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.screen3__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1041px) {
+  .screen3__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 75px;
+  }
+}
+.screen3__title {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #010932;
+}
+@media screen and (min-width: 1041px) {
+  .screen3__title {
+    margin-top: 168px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+.screen3__img {
+  margin-top: 16px;
+  padding-left: 19px;
+  padding-right: 24px;
+}
+@media screen and (min-width: 1041px) {
+  .screen3__img {
+    padding-left: 92px;
+    padding-right: 0;
+  }
+}
+.screen3__rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  margin-left: 42px;
+}
+.screen3__text {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 182.52%;
+  text-align: center;
+  color: rgba(1, 9, 50, 0.85);
+}
+@media screen and (min-width: 1041px) {
+  .screen3__text {
+    justify-content: flex-start;
+    font-size: 24px;
+    line-height: 182.52%;
+    text-align: left;
+  }
+}
+.screen3__button {
+  margin-top: 24px;
+  width: 147.1px;
+  height: 38px;
+  background: #010932;
+  border-radius: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 1041px) {
+  .screen3__button {
+    margin-top: 40px;
+    width: 193px;
+    height: 62px;
+  }
+}
+.screen3__buttontext {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 182.52%;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1041px) {
+  .screen3__buttontext {
+    font-size: 18px;
+    line-height: 182.52%;
+  }
+}
+
 .header {
   height: 165px;
   background-color: #fff;
