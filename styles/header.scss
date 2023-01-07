@@ -2,7 +2,7 @@
   height: 165px;
   background-color: #fff;
 
-  @media screen and (max-width:1000px) {
+  @media screen and (max-width:1040px) {
     height: 125px;
   }
 
@@ -11,7 +11,7 @@
     justify-content: space-between;
     padding: 36px 0px 60px 81px;
 
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1040px) {
       padding: 37px 0px 33px 25px;
     }
   }
@@ -21,20 +21,75 @@
     width: 92px;
     height: 69px;
 
-    @media screen and (max-width:1000px) {
+    @media screen and (max-width:1040px) {
       width: 74px;
       height: 55px;
     }
 
   }
 
-  &__menubutton {
+  &__menu {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    column-gap: 24px;
 
-    margin-right: 24px;
-
-    @media screen and (min-width:1000px) {
+    @media screen and (max-width:1040px) {
       display: none;
     }
+
+    &elem {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 27px;
+      color: rgba(8, 18, 71, 0.7);
+
+      &_selected {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #010932;
+      }
+
+    }
+
+    &divider {
+      margin-right: 16px;
+      height: 76px;
+      width: 2px;
+      background-color: rgba(8, 18, 71, 0.7);
+    }
+
+    &contact {
+      margin-right: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 131px;
+      height: 44px;
+      border: 1px solid rgba(8, 18, 71, 0.7);
+      border-radius: 8px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: rgba(8, 18, 71, 0.7);
+    }
+
+    &button {
+
+      margin-right: 24px;
+
+      @media screen and (min-width:1041px) {
+        display: none;
+      }
+    }
+
   }
 
 }
