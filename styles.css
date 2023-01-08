@@ -383,7 +383,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-@media screen and (min-width: 1071px) {
+@media screen and (min-width: 1041px) {
   .screen3__content {
     display: flex;
     flex-direction: row;
@@ -398,7 +398,7 @@ body {
   line-height: 43px;
   color: #010932;
 }
-@media screen and (min-width: 1071px) {
+@media screen and (min-width: 1041px) {
   .screen3__title {
     margin-top: 168px;
     font-size: 50px;
@@ -410,7 +410,13 @@ body {
   padding-left: 19px;
   padding-right: 24px;
 }
-@media screen and (min-width: 1071px) {
+@media screen and (min-width: 1041px) {
+  .screen3__img {
+    padding-left: 24px;
+    padding-right: 0;
+  }
+}
+@media screen and (min-width: 1201px) {
   .screen3__img {
     padding-left: 92px;
     padding-right: 0;
@@ -422,7 +428,7 @@ body {
   align-items: center;
   justify-content: end;
 }
-@media screen and (min-width: 1071px) {
+@media screen and (min-width: 1041px) {
   .screen3__rightside {
     margin-left: 42px;
   }
@@ -439,7 +445,15 @@ body {
   text-align: center;
   color: rgba(1, 9, 50, 0.85);
 }
-@media screen and (min-width: 1071px) {
+@media screen and (min-width: 1041px) {
+  .screen3__text {
+    justify-content: flex-start;
+    font-size: 18px;
+    line-height: 182.52%;
+    text-align: left;
+  }
+}
+@media screen and (min-width: 1201px) {
   .screen3__text {
     justify-content: flex-start;
     font-size: 24px;
@@ -457,7 +471,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-@media screen and (min-width: 1071px) {
+@media screen and (min-width: 1041px) {
   .screen3__button {
     margin-top: 40px;
     width: 193px;
@@ -472,7 +486,7 @@ body {
   line-height: 182.52%;
   color: #FFFFFF;
 }
-@media screen and (min-width: 1071px) {
+@media screen and (min-width: 1041px) {
   .screen3__buttontext {
     font-size: 18px;
     line-height: 182.52%;
