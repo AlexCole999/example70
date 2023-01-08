@@ -83,6 +83,12 @@
       font-size: 16px;
       line-height: 24px;
       color: rgba(8, 18, 71, 0.7);
+
+      &_selected {
+        background: #010932;
+        border: 1px solid #010932;
+        color: #FFFFFF;
+      }
     }
 
     &button {
