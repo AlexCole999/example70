@@ -739,7 +739,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 182.52%;
-  text-align: left;
+  text-align: center;
   color: rgba(1, 9, 50, 0.85);
 }
 @media screen and (min-width: 1041px) {
@@ -747,6 +747,7 @@ body {
     margin-top: 46px;
     font-size: 18px;
     max-width: 590px;
+    text-align: left;
   }
 }
 @media screen and (min-width: 1301px) {
@@ -754,6 +755,7 @@ body {
     margin-top: 46px;
     font-size: 24px;
     max-width: 590px;
+    text-align: left;
   }
 }
 .screen8__button {
