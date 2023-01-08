@@ -821,6 +821,10 @@ body {
   }
 }
 .header__menuelem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;

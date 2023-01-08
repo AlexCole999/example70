@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning centre</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="openedmenu display-none" id="openedmenu">
+      <div class="openedmenu__button" id="closemenubutton">
+        <img src="./images/openedmenu-arrow.svg" alt="">
+        <div class="openedmenu__buttontext">Back</div>
+      </div>
+      <div class="openedmenulist">
+        <div class="openedmenu__item">
+          <div class="openedmenu__itemtext">HOME</div>
+        </div>
+        <div class="openedmenu__item">
+          <div class="openedmenu__itemtext">ABOUT US</div>
+        </div>
+        <div class="openedmenu__item">
+          <div class="openedmenu__itemtext">Our Learning resources</div>
+        </div>
+        <div class="openedmenu__item">
+          <div class="openedmenu__itemtext">Success Stories</div>
+        </div>
+        <div class="openedmenu__item">
+          <div class="openedmenu__itemtext">contact us</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header">
+
+      <div class="header__content">
+
+        <img class="header__logo" src="./images/header-logoBig.svg" alt="">
+
+        <div class="header__menu">
+          <a href="./index.html" class="header__menuelem">
+            <div>Home</div>
+          </a>
+          <a href="./about.html" class="header__menuelem">
+            <div>About Us</div>
+          </a>
+          <a href="./resources.html" class="header__menuelem">
+            <div>Our Learning Resources</div>
+          </a>
+          <a href="./stories.html" class="header__menuelem">
+            <div>Success Stories</div>
+          </a>
+          <div class="header__menudivider"></div>
+
+          <a href="./contact.html" class="header__menucontact header__menuelem_selected">
+            <div>Contact Us</div>
+          </a>
+        </div>
+
+        <img class="header__menubutton" id="menubutton" src="./images/header-menubutton.svg" alt="">
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="./index.js"></script>
+  <script src="./scripts/openCloseMenu.js"></script>
+
+</body>
+
+</html>
