@@ -135,6 +135,12 @@
 
     @media screen and (min-width:1041px) {
       margin-top: 46px;
+      font-size: 18px;
+      max-width: 590px;
+    }
+
+    @media screen and (min-width:1301px) {
+      margin-top: 46px;
       font-size: 24px;
       max-width: 590px;
     }

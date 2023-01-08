@@ -44,6 +44,13 @@
     &text {
       padding-left: 24px;
     }
+
+    &_selected {
+      background-color: #fff;
+      color: #010932;
+      font-weight: 600;
+    }
+
   }
 
 }

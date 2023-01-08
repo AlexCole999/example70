@@ -144,6 +144,11 @@ body {
 .openedmenu__itemtext {
   padding-left: 24px;
 }
+.openedmenu__item_selected {
+  background-color: #fff;
+  color: #010932;
+  font-weight: 600;
+}
 
 .display-none {
   display: none;
@@ -738,6 +743,13 @@ body {
   color: rgba(1, 9, 50, 0.85);
 }
 @media screen and (min-width: 1041px) {
+  .screen8__text {
+    margin-top: 46px;
+    font-size: 18px;
+    max-width: 590px;
+  }
+}
+@media screen and (min-width: 1301px) {
   .screen8__text {
     margin-top: 46px;
     font-size: 24px;
