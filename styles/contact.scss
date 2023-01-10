@@ -3,6 +3,21 @@
   padding-right: 22px;
   padding-left: 18px;
 
+  @media screen and (min-width:1041px) {
+    padding-right: 82px;
+    padding-left: 82px;
+  }
+
+  &__info {
+    margin-top: 42px;
+
+    @media screen and (min-width:1041px) {
+      display: flex;
+      margin-top: 60px;
+      column-gap: 96px;
+    }
+  }
+
   &__center {
     display: flex;
     flex-direction: column;
@@ -18,15 +33,25 @@
     line-height: 43px;
     text-align: center;
     color: #010932;
+
+    @media screen and (min-width:1041px) {
+      text-align: left;
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 
   &__form {
-    margin-top: 42px;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     row-gap: 60px;
+
+    @media screen and (min-width:1041px) {
+      row-gap: 89px;
+      align-items: start;
+    }
 
     &elem {
       width: 100%;
@@ -39,12 +64,21 @@
       font-size: 16px;
       line-height: 120%;
       color: #010932;
+
+      @media screen and (min-width:1041px) {
+        font-size: 24px;
+      }
     }
 
     &input {
       border: 0px;
       border-bottom: 3px solid #010932;
       width: 100%;
+
+      @media screen and (min-width:1041px) {
+        height: 40px;
+      }
+
     }
 
   }
@@ -59,6 +93,10 @@
     background: #010932;
     border: 1px solid #010932;
     border-radius: 31px;
+
+    @media screen and (min-width:1041px) {
+      margin-top: -33px;
+    }
 
     &text {
       font-family: 'Poppins';
@@ -78,11 +116,19 @@
     margin-top: 60px;
     row-gap: 16px;
 
+    @media screen and (min-width:1041px) {
+      margin-top: 0;
+      row-gap: 72px;
+    }
 
     &elem {
       display: flex;
       flex-direction: column;
       row-gap: 16px;
+
+      @media screen and (min-width:1041px) {
+        text-align-last: left;
+      }
 
       &title {
         font-family: 'Poppins';
@@ -92,6 +138,12 @@
         line-height: 120%;
         color: #010932;
         text-align: center;
+
+        @media screen and (min-width:1041px) {
+          font-size: 32px;
+          line-height: 120%;
+          text-align: left;
+        }
       }
 
       &text {
@@ -102,6 +154,12 @@
         font-size: 16px;
         line-height: 151.5%;
         color: #010932;
+
+        @media screen and (min-width:1041px) {
+          font-size: 32px;
+          line-height: 151.5%;
+          text-align: left;
+        }
       }
 
     }

@@ -799,6 +799,22 @@ body {
   padding-right: 22px;
   padding-left: 18px;
 }
+@media screen and (min-width: 1041px) {
+  .contact {
+    padding-right: 82px;
+    padding-left: 82px;
+  }
+}
+.contact__info {
+  margin-top: 42px;
+}
+@media screen and (min-width: 1041px) {
+  .contact__info {
+    display: flex;
+    margin-top: 60px;
+    column-gap: 96px;
+  }
+}
 .contact__center {
   display: flex;
   flex-direction: column;
@@ -814,13 +830,25 @@ body {
   text-align: center;
   color: #010932;
 }
+@media screen and (min-width: 1041px) {
+  .contact__title {
+    text-align: left;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
 .contact__form {
-  margin-top: 42px;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 60px;
+}
+@media screen and (min-width: 1041px) {
+  .contact__form {
+    row-gap: 89px;
+    align-items: start;
+  }
 }
 .contact__formelem {
   width: 100%;
@@ -833,10 +861,20 @@ body {
   line-height: 120%;
   color: #010932;
 }
+@media screen and (min-width: 1041px) {
+  .contact__formtext {
+    font-size: 24px;
+  }
+}
 .contact__forminput {
   border: 0px;
   border-bottom: 3px solid #010932;
   width: 100%;
+}
+@media screen and (min-width: 1041px) {
+  .contact__forminput {
+    height: 40px;
+  }
 }
 .contact__button {
   margin-top: 32px;
@@ -848,6 +886,11 @@ body {
   background: #010932;
   border: 1px solid #010932;
   border-radius: 31px;
+}
+@media screen and (min-width: 1041px) {
+  .contact__button {
+    margin-top: -33px;
+  }
 }
 .contact__buttontext {
   font-family: 'Poppins';
@@ -864,10 +907,21 @@ body {
   margin-top: 60px;
   row-gap: 16px;
 }
+@media screen and (min-width: 1041px) {
+  .contact__right {
+    margin-top: 0;
+    row-gap: 72px;
+  }
+}
 .contact__rightelem {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
+}
+@media screen and (min-width: 1041px) {
+  .contact__rightelem {
+    text-align-last: left;
+  }
 }
 .contact__rightelemtitle {
   font-family: 'Poppins';
@@ -878,6 +932,13 @@ body {
   color: #010932;
   text-align: center;
 }
+@media screen and (min-width: 1041px) {
+  .contact__rightelemtitle {
+    font-size: 32px;
+    line-height: 120%;
+    text-align: left;
+  }
+}
 .contact__rightelemtext {
   text-align: center;
   font-family: 'Inter';
@@ -886,6 +947,13 @@ body {
   font-size: 16px;
   line-height: 151.5%;
   color: #010932;
+}
+@media screen and (min-width: 1041px) {
+  .contact__rightelemtext {
+    font-size: 32px;
+    line-height: 151.5%;
+    text-align: left;
+  }
 }
 
 .header {
