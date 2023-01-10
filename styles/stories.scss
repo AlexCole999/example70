@@ -1,4 +1,5 @@
 .stories {
+  position: relative;
   background-color: #010932;
   display: flex;
   flex-direction: column;
@@ -54,6 +55,10 @@
     padding-left: 24px;
 
     @media screen and (min-width:1041px) {
+      background: url(../images/stories-bg.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
       padding: 0;
       margin: 0;
       display: flex;
@@ -67,12 +72,6 @@
       display: flex;
       flex-direction: column;
       row-gap: 51px;
-      padding-left: 50px;
-      padding-right: 50px;
-      background: url(../images/stories-bg.svg);
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
     }
 
     &description {
@@ -156,6 +155,19 @@
       @media screen and (min-width:1041px) {
         display: none;
       }
+
+      &_bigscreen {
+        display: none;
+        position: absolute;
+        column-gap: 12px;
+        top: 137px;
+        right: 41px;
+
+        @media screen and (min-width:1041px) {
+          display: flex;
+        }
+      }
+
     }
 
   }
