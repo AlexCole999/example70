@@ -1,0 +1,74 @@
+.contact {
+  width: 100%;
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__title {
+    font-family: 'Patrick Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #010932;
+  }
+
+  &__form {
+    margin-top: 42px;
+    padding-right: 22px;
+    padding-left: 18px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+
+    &elem {
+      width: 100%;
+    }
+
+    &text {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 120%;
+      color: #010932;
+    }
+
+    &input {
+      border: 0px;
+      border-bottom: 3px solid #010932;
+      width: 100%;
+    }
+
+  }
+
+  &__button {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 193px;
+    height: 62px;
+    background: #010932;
+    border: 1px solid #010932;
+    border-radius: 31px;
+
+    &text {
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 182.52%;
+      color: #FFFFFF;
+    }
+
+  }
+
+}
