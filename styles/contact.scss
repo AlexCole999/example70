@@ -6,6 +6,20 @@
   @media screen and (min-width:1041px) {
     padding-right: 82px;
     padding-left: 82px;
+    display: flex;
+    column-gap: 45px;
+  }
+
+  @media screen and (min-width:1201px) {
+    column-gap: 99px;
+  }
+
+  &__left {
+    display: none;
+
+    @media screen and (min-width:1041px) {
+      display: block;
+    }
   }
 
   &__info {
@@ -14,6 +28,10 @@
     @media screen and (min-width:1041px) {
       display: flex;
       margin-top: 60px;
+      column-gap: 50px;
+    }
+
+    @media screen and (min-width:1201px) {
       column-gap: 96px;
     }
   }

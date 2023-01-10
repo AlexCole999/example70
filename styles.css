@@ -803,6 +803,21 @@ body {
   .contact {
     padding-right: 82px;
     padding-left: 82px;
+    display: flex;
+    column-gap: 45px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .contact {
+    column-gap: 99px;
+  }
+}
+.contact__left {
+  display: none;
+}
+@media screen and (min-width: 1041px) {
+  .contact__left {
+    display: block;
   }
 }
 .contact__info {
@@ -812,6 +827,11 @@ body {
   .contact__info {
     display: flex;
     margin-top: 60px;
+    column-gap: 50px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .contact__info {
     column-gap: 96px;
   }
 }
