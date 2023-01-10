@@ -794,6 +794,10 @@ body {
   width: 17px;
 }
 
+.resources {
+  color: red;
+}
+
 .stories {
   background-color: #010932;
   display: flex;
