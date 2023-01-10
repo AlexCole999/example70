@@ -1,1 +1,79 @@
-.stories {}
+.stories {
+  background-color: #010932;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  &__title {
+    padding-left: 55px;
+    padding-right: 55px;
+    text-align: center;
+    padding-top: 24px;
+    font-family: 'Patrick Hand';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__content {
+    display: flex;
+    column-gap: 16px;
+    padding-top: 28px;
+    padding-right: 24px;
+    padding-left: 24px;
+  }
+
+  &__text {
+    &description {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 182.52%;
+      color: #FFFFFF;
+
+      @media screen and (min-width:721px) {
+        font-size: 18px;
+      }
+    }
+
+    &sign {
+      margin-top: 13px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #FFFFFF;
+
+      @media screen and (min-width:721px) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__img {
+    &small {
+      border-radius: 12px;
+      width: 94px;
+      height: 140px;
+
+      @media screen and (min-width:721px) {
+        width: 141px;
+        height: 210px;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+    column-gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 33px;
+  }
+
+}
