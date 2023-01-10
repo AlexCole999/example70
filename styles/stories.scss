@@ -1,11 +1,11 @@
 .stories {
-  position: relative;
   background-color: #010932;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media screen and (min-width:1041px) {
+    position: relative;
     flex-direction: row;
     align-items: start;
     column-gap: 32px;
