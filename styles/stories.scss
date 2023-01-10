@@ -4,6 +4,22 @@
   flex-direction: column;
   align-items: center;
 
+  @media screen and (min-width:1041px) {
+    flex-direction: row;
+    align-items: start;
+    column-gap: 32px;
+  }
+
+  &__mobile {
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width:1041px) {
+      justify-items: start;
+      padding-top: 40px;
+      width: 100%;
+    }
+  }
 
   &__title {
     padding-left: 55px;
@@ -17,6 +33,17 @@
     line-height: 43px;
     text-align: center;
     color: #FFFFFF;
+
+    @media screen and (min-width:1041px) {
+      display: flex;
+      justify-content: start;
+      padding: 0;
+      margin: 0;
+      font-size: 50px;
+      line-height: 68px;
+      max-width: 645px;
+      text-align: left;
+    }
   }
 
   &__content {
@@ -25,9 +52,29 @@
     padding-top: 28px;
     padding-right: 24px;
     padding-left: 24px;
+
+    @media screen and (min-width:1041px) {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+
+    }
   }
 
   &__text {
+    @media screen and (min-width:1041px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 51px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background: url(../images/stories-bg.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
     &description {
       font-family: 'Inter';
       font-style: normal;
@@ -38,6 +85,17 @@
 
       @media screen and (min-width:721px) {
         font-size: 18px;
+      }
+
+      @media screen and (min-width:1041px) {
+        max-width: 460px;
+        padding-top: 70px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 47px;
+        color: #FFFFFF;
       }
     }
 
@@ -53,10 +111,21 @@
       @media screen and (min-width:721px) {
         font-size: 22px;
       }
+
     }
   }
 
   &__img {
+    &big {
+      display: none;
+      padding: 40px;
+      padding-right: 0;
+
+      @media screen and (min-width:1041px) {
+        display: block;
+      }
+    }
+
     &small {
       border-radius: 12px;
       width: 94px;
@@ -66,14 +135,29 @@
         width: 141px;
         height: 210px;
       }
+
+      @media screen and (min-width:1041px) {
+        display: none;
+      }
     }
   }
 
   &__navigation {
     display: flex;
-    column-gap: 24px;
-    margin-top: 40px;
-    margin-bottom: 33px;
+    justify-content: center;
+
+    &buttons {
+
+      display: flex;
+      column-gap: 24px;
+      margin-top: 40px;
+      margin-bottom: 33px;
+
+      @media screen and (min-width:1041px) {
+        display: none;
+      }
+    }
+
   }
 
 }
