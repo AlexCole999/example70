@@ -6,12 +6,21 @@
   @media screen and (min-width:1041px) {
     padding-right: 82px;
     padding-left: 82px;
+    padding-bottom: 160px;
     display: flex;
     column-gap: 45px;
   }
 
   @media screen and (min-width:1201px) {
     column-gap: 99px;
+  }
+
+  &__instories {
+    margin-top: 48px;
+
+    @media screen and (min-width:1041px) {
+      margin-top: 160px;
+    }
   }
 
   &__left {
