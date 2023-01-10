@@ -1,5 +1,7 @@
 .contact {
   width: 100%;
+  padding-right: 22px;
+  padding-left: 18px;
 
   &__center {
     display: flex;
@@ -20,8 +22,6 @@
 
   &__form {
     margin-top: 42px;
-    padding-right: 22px;
-    padding-left: 18px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -69,6 +69,42 @@
       color: #FFFFFF;
     }
 
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    row-gap: 16px;
+
+
+    &elem {
+      display: flex;
+      flex-direction: column;
+      row-gap: 16px;
+
+      &title {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 120%;
+        color: #010932;
+        text-align: center;
+      }
+
+      &text {
+        text-align: center;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 151.5%;
+        color: #010932;
+      }
+
+    }
   }
 
 }
