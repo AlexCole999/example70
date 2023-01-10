@@ -901,15 +901,26 @@ body {
   color: #FFFFFF;
 }
 .contact__right {
+  padding-top: 60px;
+  padding-bottom: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 60px;
-  row-gap: 16px;
+  justify-content: space-between;
 }
 @media screen and (min-width: 1041px) {
   .contact__right {
-    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.contact__righttop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
+}
+@media screen and (min-width: 1041px) {
+  .contact__righttop {
     row-gap: 72px;
   }
 }
@@ -953,6 +964,15 @@ body {
     font-size: 32px;
     line-height: 151.5%;
     text-align: left;
+  }
+}
+.contact__icons {
+  display: none;
+}
+@media screen and (min-width: 1041px) {
+  .contact__icons {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
