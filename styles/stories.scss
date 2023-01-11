@@ -117,8 +117,9 @@
   &__img {
     &big {
       display: none;
-      padding: 40px;
-      padding-right: 0;
+      margin: 40px;
+      margin-right: 0;
+      border-radius: 26px;
 
       @media screen and (min-width:1041px) {
         display: block;

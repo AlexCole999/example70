@@ -915,8 +915,9 @@ body {
 }
 .stories__imgbig {
   display: none;
-  padding: 40px;
-  padding-right: 0;
+  margin: 40px;
+  margin-right: 0;
+  border-radius: 26px;
 }
 @media screen and (min-width: 1041px) {
   .stories__imgbig {
