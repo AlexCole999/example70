@@ -1,52 +1,65 @@
 .footer {
   background: #F2F2F4;
+  width: 100%;
 
-  &__firstrow {
+  &__top {
     display: flex;
     justify-content: space-between;
   }
 
-  &__icons {
+  &__links {
     display: flex;
-    gap: 15px;
-    padding-top: 32px;
-    padding-right: 73px;
-  }
+    flex-direction: column;
+    row-gap: 32px;
+    padding-top: 40px;
+    padding-left: 24px;
 
-  &__menu {
-    display: flex;
-    gap: 40px;
-    padding-top: 42.5px;
-    padding-left: 78.5px;
-
-    &item {
+    &elem {
       font-family: 'Inter';
       font-style: normal;
       font-weight: 400;
-      font-size: 16px;
-      line-height: 19px;
+      font-size: 14px;
+      line-height: 17px;
       color: #010932;
     }
-
   }
 
-  &__secondrow {
-    padding-top: 20px;
+  &__rightside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+
+  &__icons {
+    display: flex;
+    column-gap: 15px;
+
+
+    &elem {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &__logo {
+    &small {
+      width: 99px;
+      height: 74px;
+      padding-bottom: 2px;
+      padding-right: 4px;
+    }
+  }
+
+  &__bottom {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 30px;
-  }
-
-  &__column2 {
-    margin-right: 200px;
-  }
-
-  &__column3 {
-    display: flex;
-    align-items: flex-end;
-    gap: 48px;
-    padding-right: 80px;
-    margin-bottom: 16px;
+    column-gap: 46px;
+    padding-top: 61px;
+    padding-right: 23px;
+    padding-bottom: 32px;
   }
 
 }
