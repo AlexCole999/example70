@@ -15,138 +15,238 @@
       column-gap: 50px;
       padding: 80px 80px 80px 92px;
     }
-  }
 
-  &__rightside {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @media screen and (min-width:1041px) {
-      align-items: flex-start;
-    }
-  }
-
-  &__title {
-    padding-top: 17px;
-    font-family: 'Patrick Hand';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 43px;
-    color: #010932;
-
-    @media screen and (min-width:1041px) {
-      padding: 0;
-      font-size: 50px;
-      line-height: 68px;
-      max-width: 375px;
-    }
-  }
-
-  &__mainimg {
-    &big {
-      border-radius: 33px;
-      display: none;
+    &rightside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       @media screen and (min-width:1041px) {
-        display: block;
-        width: 400px;
-      }
-
-      @media screen and (min-width:1201px) {
-        width: 100%;
+        align-items: flex-start;
       }
     }
 
-    &small {
-      padding-top: 32px;
-      padding-right: 24px;
-      padding-left: 24px;
-      border-radius: 8px;
+    &title {
+      padding-top: 17px;
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 43px;
+      color: #010932;
 
       @media screen and (min-width:1041px) {
+        padding: 0;
+        font-size: 50px;
+        line-height: 68px;
+        max-width: 375px;
+      }
+    }
+
+    &mainimg {
+      &big {
+        border-radius: 33px;
         display: none;
+
+        @media screen and (min-width:1041px) {
+          display: block;
+          width: 400px;
+        }
+
+        @media screen and (min-width:1201px) {
+          width: 100%;
+        }
       }
-    }
-  }
 
-  &__text {
-    padding-top: 32px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-right: 24px;
-    padding-left: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 182.52%;
-    text-align: center;
-    color: rgba(1, 9, 50, 0.85);
+      &small {
+        padding-top: 32px;
+        padding-right: 24px;
+        padding-left: 24px;
+        border-radius: 8px;
 
-    @media screen and (min-width:1041px) {
-      margin-top: 45px;
-      align-items: flex-start;
-      text-align: left;
-      padding: 0;
-      font-size: 24px;
-      line-height: 182.52%;
-    }
-
-    &divider {
-      width: 39px;
-      margin-top: 24px;
-      margin-bottom: 24px;
-      height: 3px;
-      background-color: #010932;
-
-      @media screen and (min-width:1041px) {
-        width: 58px;
+        @media screen and (min-width:1041px) {
+          display: none;
+        }
       }
-    }
-
-  }
-
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 4px;
-    width: 147.1px;
-    height: 38px;
-    background: #010932;
-    border-radius: 31px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-
-    @media screen and (min-width:1041px) {
-      width: 232px;
-      height: 62px;
-      column-gap: 16px;
-      margin-top: 80px;
-      margin-bottom: 10px;
     }
 
     &text {
-      font-family: 'Poppins';
+      padding-top: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right: 24px;
+      padding-left: 24px;
+      font-family: 'Inter';
       font-style: normal;
-      font-weight: 600;
-      font-size: 12px;
+      font-weight: 500;
+      font-size: 14px;
       line-height: 182.52%;
-      color: #FFFFFF;
+      text-align: center;
+      color: rgba(1, 9, 50, 0.85);
 
       @media screen and (min-width:1041px) {
-        font-size: 18px;
+        margin-top: 45px;
+        align-items: flex-start;
+        text-align: left;
+        padding: 0;
+        font-size: 24px;
+        line-height: 182.52%;
+      }
+
+      &divider {
+        width: 39px;
+        margin-top: 24px;
+        margin-bottom: 24px;
+        height: 3px;
+        background-color: #010932;
+
+        @media screen and (min-width:1041px) {
+          width: 58px;
+        }
+      }
+
+    }
+
+    &button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 4px;
+      width: 147.1px;
+      height: 38px;
+      background: #010932;
+      border-radius: 31px;
+      margin-top: 32px;
+      margin-bottom: 32px;
+
+      @media screen and (min-width:1041px) {
+        width: 232px;
+        height: 62px;
+        column-gap: 16px;
+        margin-top: 80px;
+        margin-bottom: 10px;
+      }
+
+      &text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 182.52%;
+        color: #FFFFFF;
+
+        @media screen and (min-width:1041px) {
+          font-size: 18px;
+        }
+      }
+
+      &arrow {
+        width: 9px;
+
+        @media screen and (min-width:1041px) {
+          width: 17px;
+        }
+      }
+
+    }
+
+  }
+
+  &__screen2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+    margin-left: 24px;
+    margin-right: 24px;
+
+    @media screen and (min-width:1041px) {
+      margin-top: 120px;
+      margin-right: 80px;
+      margin-left: 80px;
+    }
+
+    &title {
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 43px;
+      color: #010932;
+
+      @media screen and (min-width:1041px) {
+        font-size: 50px;
+        line-height: 68px;
       }
     }
 
-    &arrow {
-      width: 9px;
+    &menu {
+      margin-top: 32px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      row-gap: 24px;
+      column-gap: 26px;
 
       @media screen and (min-width:1041px) {
-        width: 17px;
+        margin-top: 53px;
+      }
+
+      &elem {
+        position: relative;
+        max-width: 342px;
+
+        @media screen and (min-width:1041px) {
+          max-width: 298px;
+        }
+
+        &text {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: 'Patrick Hand';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 40px;
+          line-height: 54px;
+          text-align: center;
+          color: #FFFFFF;
+        }
+      }
+    }
+
+    &button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+      margin-bottom: 60px;
+      width: 193px;
+      height: 62px;
+      background: #010932;
+      border: 1px solid #010932;
+      border-radius: 31px;
+
+      @media screen and (min-width:1041px) {
+        margin-top: 80px;
+        margin-bottom: 160px;
+      }
+
+      &text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 182.52%;
+        color: #FFFFFF;
       }
     }
 
