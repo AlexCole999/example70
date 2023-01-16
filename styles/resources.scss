@@ -8,6 +8,23 @@
     flex-direction: column;
     align-items: center;
     background-color: rgba(1, 9, 50, 0.03);
+
+    @media screen and (min-width:1041px) {
+      flex-direction: row;
+      align-items: flex-start;
+      column-gap: 50px;
+      padding: 80px 80px 80px 92px;
+    }
+  }
+
+  &__rightside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media screen and (min-width:1041px) {
+      align-items: flex-start;
+    }
   }
 
   &__title {
@@ -18,13 +35,35 @@
     font-size: 32px;
     line-height: 43px;
     color: #010932;
+
+    @media screen and (min-width:1041px) {
+      padding: 0;
+      font-size: 50px;
+      line-height: 68px;
+      max-width: 375px;
+    }
   }
 
   &__mainimg {
+    &big {
+      border-radius: 33px;
+      display: none;
+
+      @media screen and (min-width:1041px) {
+        display: block;
+        width: 400px;
+      }
+
+      @media screen and (min-width:1201px) {
+        width: 100%;
+      }
+    }
+
     &small {
       padding-top: 32px;
       padding-right: 24px;
       padding-left: 24px;
+      border-radius: 8px;
 
       @media screen and (min-width:1041px) {
         display: none;
@@ -47,12 +86,25 @@
     text-align: center;
     color: rgba(1, 9, 50, 0.85);
 
+    @media screen and (min-width:1041px) {
+      margin-top: 45px;
+      align-items: flex-start;
+      text-align: left;
+      padding: 0;
+      font-size: 24px;
+      line-height: 182.52%;
+    }
+
     &divider {
       width: 39px;
       margin-top: 24px;
       margin-bottom: 24px;
       height: 3px;
       background-color: #010932;
+
+      @media screen and (min-width:1041px) {
+        width: 58px;
+      }
     }
 
   }
@@ -69,6 +121,14 @@
     margin-top: 32px;
     margin-bottom: 32px;
 
+    @media screen and (min-width:1041px) {
+      width: 232px;
+      height: 62px;
+      column-gap: 16px;
+      margin-top: 80px;
+      margin-bottom: 10px;
+    }
+
     &text {
       font-family: 'Poppins';
       font-style: normal;
@@ -76,10 +136,18 @@
       font-size: 12px;
       line-height: 182.52%;
       color: #FFFFFF;
+
+      @media screen and (min-width:1041px) {
+        font-size: 18px;
+      }
     }
 
     &arrow {
       width: 9px;
+
+      @media screen and (min-width:1041px) {
+        width: 17px;
+      }
     }
 
   }

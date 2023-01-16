@@ -805,6 +805,24 @@ body {
   align-items: center;
   background-color: rgba(1, 9, 50, 0.03);
 }
+@media screen and (min-width: 1041px) {
+  .resources__screen1 {
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 50px;
+    padding: 80px 80px 80px 92px;
+  }
+}
+.resources__rightside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 1041px) {
+  .resources__rightside {
+    align-items: flex-start;
+  }
+}
 .resources__title {
   padding-top: 17px;
   font-family: 'Patrick Hand';
@@ -814,10 +832,34 @@ body {
   line-height: 43px;
   color: #010932;
 }
+@media screen and (min-width: 1041px) {
+  .resources__title {
+    padding: 0;
+    font-size: 50px;
+    line-height: 68px;
+    max-width: 375px;
+  }
+}
+.resources__mainimgbig {
+  border-radius: 33px;
+  display: none;
+}
+@media screen and (min-width: 1041px) {
+  .resources__mainimgbig {
+    display: block;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .resources__mainimgbig {
+    width: 100%;
+  }
+}
 .resources__mainimgsmall {
   padding-top: 32px;
   padding-right: 24px;
   padding-left: 24px;
+  border-radius: 8px;
 }
 @media screen and (min-width: 1041px) {
   .resources__mainimgsmall {
@@ -839,12 +881,27 @@ body {
   text-align: center;
   color: rgba(1, 9, 50, 0.85);
 }
+@media screen and (min-width: 1041px) {
+  .resources__text {
+    margin-top: 45px;
+    align-items: flex-start;
+    text-align: left;
+    padding: 0;
+    font-size: 24px;
+    line-height: 182.52%;
+  }
+}
 .resources__textdivider {
   width: 39px;
   margin-top: 24px;
   margin-bottom: 24px;
   height: 3px;
   background-color: #010932;
+}
+@media screen and (min-width: 1041px) {
+  .resources__textdivider {
+    width: 58px;
+  }
 }
 .resources__button {
   display: flex;
@@ -858,6 +915,15 @@ body {
   margin-top: 32px;
   margin-bottom: 32px;
 }
+@media screen and (min-width: 1041px) {
+  .resources__button {
+    width: 232px;
+    height: 62px;
+    column-gap: 16px;
+    margin-top: 80px;
+    margin-bottom: 10px;
+  }
+}
 .resources__buttontext {
   font-family: 'Poppins';
   font-style: normal;
@@ -866,8 +932,18 @@ body {
   line-height: 182.52%;
   color: #FFFFFF;
 }
+@media screen and (min-width: 1041px) {
+  .resources__buttontext {
+    font-size: 18px;
+  }
+}
 .resources__buttonarrow {
   width: 9px;
+}
+@media screen and (min-width: 1041px) {
+  .resources__buttonarrow {
+    width: 17px;
+  }
 }
 
 .stories {
