@@ -795,7 +795,79 @@ body {
 }
 
 .resources {
-  color: red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.resources__screen1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(1, 9, 50, 0.03);
+}
+.resources__title {
+  padding-top: 17px;
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #010932;
+}
+.resources__mainimgsmall {
+  padding-top: 32px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+@media screen and (min-width: 1041px) {
+  .resources__mainimgsmall {
+    display: none;
+  }
+}
+.resources__text {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 24px;
+  padding-left: 24px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 182.52%;
+  text-align: center;
+  color: rgba(1, 9, 50, 0.85);
+}
+.resources__textdivider {
+  width: 39px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  height: 3px;
+  background-color: #010932;
+}
+.resources__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 4px;
+  width: 147.1px;
+  height: 38px;
+  background: #010932;
+  border-radius: 31px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.resources__buttontext {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 182.52%;
+  color: #FFFFFF;
+}
+.resources__buttonarrow {
+  width: 9px;
 }
 
 .stories {
