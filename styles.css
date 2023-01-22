@@ -794,6 +794,10 @@ body {
   width: 17px;
 }
 
+.about {
+  color: red;
+}
+
 .resources {
   width: 100%;
   display: flex;
