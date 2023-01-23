@@ -1,5 +1,96 @@
 .about {
-  &__screen1 {}
+  &__screen1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    @media screen and (min-width: 1201px) {
+      padding-left: 80px;
+      padding-right: 80px;
+    }
+
+    &title {
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 43px;
+      color: #010932;
+
+      @media screen and (min-width: 1201px) {
+        font-size: 50px;
+        line-height: 68px;
+      }
+    }
+
+    &text {
+      &row1 {
+        margin-top: 23px;
+        margin-bottom: 32px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 182.52%;
+        text-align: center;
+        color: rgba(1, 9, 50, 0.85);
+
+        @media screen and (min-width: 1201px) {
+          margin-top: 40px;
+          margin-bottom: 0px;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 200.52%;
+        }
+      }
+
+      &row2 {
+        margin-top: 23px;
+        margin-bottom: 37px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 182.52%;
+        text-align: center;
+        color: rgba(1, 9, 50, 0.85);
+
+        @media screen and (min-width: 1201px) {
+          margin-top: 0px;
+          margin-bottom: 119px;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 200.52%;
+        }
+      }
+    }
+
+    &img {
+      &1 {
+        @media screen and (min-width: 1201px) {
+          display: none;
+        }
+      }
+
+      &2 {
+        @media screen and (min-width: 1201px) {
+          display: none;
+        }
+      }
+
+      &big {
+        display: none;
+
+        @media screen and (min-width: 1201px) {
+          display: block;
+          margin-bottom: 192px;
+        }
+      }
+    }
+
+  }
 
   &__screen2 {
     margin-top: 48px;

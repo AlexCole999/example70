@@ -794,6 +794,92 @@ body {
   width: 17px;
 }
 
+.about__screen1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+@media screen and (min-width: 1201px) {
+  .about__screen1 {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+.about__screen1title {
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #010932;
+}
+@media screen and (min-width: 1201px) {
+  .about__screen1title {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+.about__screen1textrow1 {
+  margin-top: 23px;
+  margin-bottom: 32px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 182.52%;
+  text-align: center;
+  color: rgba(1, 9, 50, 0.85);
+}
+@media screen and (min-width: 1201px) {
+  .about__screen1textrow1 {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200.52%;
+  }
+}
+.about__screen1textrow2 {
+  margin-top: 23px;
+  margin-bottom: 37px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 182.52%;
+  text-align: center;
+  color: rgba(1, 9, 50, 0.85);
+}
+@media screen and (min-width: 1201px) {
+  .about__screen1textrow2 {
+    margin-top: 0px;
+    margin-bottom: 119px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 200.52%;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .about__screen1img1 {
+    display: none;
+  }
+}
+@media screen and (min-width: 1201px) {
+  .about__screen1img2 {
+    display: none;
+  }
+}
+.about__screen1imgbig {
+  display: none;
+}
+@media screen and (min-width: 1201px) {
+  .about__screen1imgbig {
+    display: block;
+    margin-bottom: 192px;
+  }
+}
 .about__screen2 {
   margin-top: 48px;
   display: flex;
