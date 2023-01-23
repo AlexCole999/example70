@@ -9,6 +9,11 @@
     padding-left: 24px;
     padding-right: 24px;
 
+    @media screen and (min-width: 1201px) {
+      padding-left: 80px;
+      padding-right: 32px;
+    }
+
     &title {
       font-family: 'Patrick Hand';
       font-style: normal;
@@ -32,7 +37,6 @@
         flex-direction: row;
         margin-top: 80px;
         row-gap: 0px;
-        column-gap: 24px;
       }
     }
 
@@ -48,7 +52,10 @@
       }
     }
 
-    &row2 {}
+    &row2 {
+      margin-left: 16px;
+      margin-right: 24px;
+    }
 
     &row3 {
       display: flex;
@@ -58,6 +65,7 @@
       @media screen and (min-width: 1041px) {
         margin-top: 26px;
         justify-content: space-between;
+        max-width: 415px;
       }
     }
 
@@ -96,5 +104,96 @@
     }
   }
 
-  &__screen3 {}
+  &__screen3 {
+    margin-top: 54px;
+    margin-bottom: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    row-gap: 24px;
+    padding-left: 17px;
+    padding-right: 24px;
+
+    @media screen and (min-width: 1041px) {
+      margin-top: 112px;
+      margin-bottom: 160px;
+      padding-left: 65px;
+      padding-right: 80px;
+      row-gap: 50px;
+    }
+
+    &elem {
+      display: flex;
+      align-items: start;
+      column-gap: 8px;
+
+      @media screen and (min-width: 1041px) {
+        column-gap: 25px;
+        align-items: flex-start;
+      }
+
+      &icon {
+        width: 24px;
+        height: 24px;
+
+        @media screen and (min-width: 1041px) {
+          width: 56px;
+          height: 56px;
+        }
+      }
+
+      &text {
+        text-align: left;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 169%;
+        color: #010932;
+
+        @media screen and (min-width: 1041px) {
+          padding-top: 7px;
+          font-size: 24px;
+          line-height: 157.02%;
+        }
+      }
+    }
+
+    &button {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 147.1px;
+      height: 38px;
+      background: #010932;
+      border-radius: 31px;
+
+      @media screen and (min-width: 1041px) {
+        width: 193px;
+        height: 62px;
+      }
+
+      &wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+
+      &text {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 182.52%;
+        color: #FFFFFF;
+
+        @media screen and (min-width: 1041px) {
+          font-size: 18px;
+          line-height: 182.52%;
+        }
+      }
+    }
+
+  }
 }

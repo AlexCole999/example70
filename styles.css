@@ -802,6 +802,12 @@ body {
   padding-left: 24px;
   padding-right: 24px;
 }
+@media screen and (min-width: 1201px) {
+  .about__screen2 {
+    padding-left: 80px;
+    padding-right: 32px;
+  }
+}
 .about__screen2title {
   font-family: 'Patrick Hand';
   font-style: normal;
@@ -826,7 +832,6 @@ body {
     flex-direction: row;
     margin-top: 80px;
     row-gap: 0px;
-    column-gap: 24px;
   }
 }
 .about__screen2row1 {
@@ -841,6 +846,10 @@ body {
     margin-top: 26px;
   }
 }
+.about__screen2row2 {
+  margin-left: 16px;
+  margin-right: 24px;
+}
 .about__screen2row3 {
   display: flex;
   flex-direction: column;
@@ -850,6 +859,7 @@ body {
   .about__screen2row3 {
     margin-top: 26px;
     justify-content: space-between;
+    max-width: 415px;
   }
 }
 .about__screen2elem {
@@ -884,6 +894,97 @@ body {
   .about__screen2elemtext {
     font-size: 24px;
     line-height: 152.5%;
+  }
+}
+.about__screen3 {
+  margin-top: 54px;
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 24px;
+  padding-left: 17px;
+  padding-right: 24px;
+}
+@media screen and (min-width: 1041px) {
+  .about__screen3 {
+    margin-top: 112px;
+    margin-bottom: 160px;
+    padding-left: 65px;
+    padding-right: 80px;
+    row-gap: 50px;
+  }
+}
+.about__screen3elem {
+  display: flex;
+  align-items: start;
+  column-gap: 8px;
+}
+@media screen and (min-width: 1041px) {
+  .about__screen3elem {
+    column-gap: 25px;
+    align-items: flex-start;
+  }
+}
+.about__screen3elemicon {
+  width: 24px;
+  height: 24px;
+}
+@media screen and (min-width: 1041px) {
+  .about__screen3elemicon {
+    width: 56px;
+    height: 56px;
+  }
+}
+.about__screen3elemtext {
+  text-align: left;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 169%;
+  color: #010932;
+}
+@media screen and (min-width: 1041px) {
+  .about__screen3elemtext {
+    padding-top: 7px;
+    font-size: 24px;
+    line-height: 157.02%;
+  }
+}
+.about__screen3button {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 147.1px;
+  height: 38px;
+  background: #010932;
+  border-radius: 31px;
+}
+@media screen and (min-width: 1041px) {
+  .about__screen3button {
+    width: 193px;
+    height: 62px;
+  }
+}
+.about__screen3buttonwrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about__screen3buttontext {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 182.52%;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1041px) {
+  .about__screen3buttontext {
+    font-size: 18px;
+    line-height: 182.52%;
   }
 }
 
