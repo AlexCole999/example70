@@ -1,3 +1,100 @@
 .about {
-  color: red;
+  &__screen1 {}
+
+  &__screen2 {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+
+    &title {
+      font-family: 'Patrick Hand';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 32px;
+      line-height: 43px;
+      color: #010932;
+
+      @media screen and (min-width: 1041px) {
+        font-size: 50px;
+        line-height: 68px;
+      }
+    }
+
+    &content {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+
+      @media screen and (min-width: 1041px) {
+        flex-direction: row;
+        margin-top: 80px;
+        row-gap: 0px;
+        column-gap: 24px;
+      }
+    }
+
+    &row1 {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      @media screen and (min-width: 1041px) {
+        justify-content: space-between;
+        margin-top: 26px;
+      }
+    }
+
+    &row2 {}
+
+    &row3 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+
+      @media screen and (min-width: 1041px) {
+        margin-top: 26px;
+        justify-content: space-between;
+      }
+    }
+
+    &elem {
+      display: flex;
+      align-items: start;
+      column-gap: 6px;
+
+      @media screen and (min-width: 1041px) {
+        column-gap: 24px;
+      }
+
+      &icon {
+        width: 24px;
+        height: 24px;
+
+        @media screen and (min-width: 1041px) {
+          width: 42px;
+          height: 42px;
+        }
+      }
+
+      &text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 169.19%;
+        color: #010932;
+
+        @media screen and (min-width: 1041px) {
+          font-size: 24px;
+          line-height: 152.5%;
+        }
+      }
+    }
+  }
+
+  &__screen3 {}
 }
