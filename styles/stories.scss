@@ -11,6 +11,11 @@
     column-gap: 32px;
   }
 
+  @media screen and (min-width:1201px) {
+    margin-left: 82px;
+    margin-right: 82px;
+  }
+
   &__mobile {
     display: flex;
     flex-direction: column;

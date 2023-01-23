@@ -15,6 +15,14 @@
     column-gap: 99px;
   }
 
+  &__wrapper {
+    width: 100%;
+
+    @media screen and (min-width:1041px) {
+      width: 60%;
+    }
+  }
+
   &__instories {
     margin-top: 48px;
 

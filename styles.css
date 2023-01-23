@@ -1336,6 +1336,12 @@ body {
     column-gap: 32px;
   }
 }
+@media screen and (min-width: 1201px) {
+  .stories {
+    margin-left: 82px;
+    margin-right: 82px;
+  }
+}
 .stories__mobile {
   display: flex;
   flex-direction: column;
@@ -1509,6 +1515,14 @@ body {
 @media screen and (min-width: 1201px) {
   .contact {
     column-gap: 99px;
+  }
+}
+.contact__wrapper {
+  width: 100%;
+}
+@media screen and (min-width: 1041px) {
+  .contact__wrapper {
+    width: 60%;
   }
 }
 .contact__instories {
