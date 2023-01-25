@@ -619,6 +619,14 @@ body {
   width: 100%;
 }
 
+.screen6 {
+  color: red;
+}
+
+.screen7 {
+  color: red;
+}
+
 .screen8 {
   width: 100%;
   display: flex;
