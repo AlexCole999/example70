@@ -5,9 +5,11 @@
   align-items: center;
   background: rgba(1, 9, 50, 0.03);
   margin-top: 48px;
+  margin-bottom: 60px;
 
   @media screen and (min-width:1041px) {
     margin-top: 160px;
+    margin-bottom: 160px;
   }
 
   &__title {
