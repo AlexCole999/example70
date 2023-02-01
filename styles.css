@@ -620,7 +620,83 @@ body {
 }
 
 .screen6 {
-  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.screen6__title {
+  padding-top: 48px;
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #010932;
+}
+.screen6__content {
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  border: 1px solid rgba(1, 9, 50, 0.4);
+  border-radius: 7px;
+}
+.screen6__photomain {
+  position: relative;
+}
+.screen6__photomainimg {
+  min-height: 97px;
+}
+.screen6__photomaintext {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  color: #FFFFFF;
+}
+.screen6__photorow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 24px;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 24px;
+  column-gap: 26px;
+  row-gap: 16px;
+}
+.screen6__photorowelem {
+  position: relative;
+}
+.screen6__photorowelemimg {
+  width: 142.57px;
+  height: 82.46px;
+  border-radius: 10px;
+}
+.screen6__photorowelemtext {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Patrick Hand';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #FFFFFF;
 }
 
 .screen7 {
