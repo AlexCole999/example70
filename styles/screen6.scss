@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1262px;
 
   &__title {
     padding-top: 48px;
@@ -11,6 +12,12 @@
     font-size: 32px;
     line-height: 43px;
     color: #010932;
+
+    @media screen and (min-width:1041px) {
+      padding-top: 175px;
+      font-size: 50px;
+      line-height: 68px;
+    }
   }
 
   &__content {
@@ -19,6 +26,10 @@
     margin-right: 24px;
     border: 1px solid rgba(1, 9, 50, 0.4);
     border-radius: 7px;
+
+    @media screen and (min-width:1041px) {
+      margin-top: 97px;
+    }
   }
 
   &__photo {
@@ -43,8 +54,12 @@
         font-weight: 400;
         font-size: 30px;
         line-height: 41px;
-
         color: #FFFFFF;
+
+        @media screen and (min-width:1041px) {
+          font-size: 120px;
+          line-height: 162px;
+        }
       }
     }
 
@@ -53,11 +68,21 @@
       justify-content: center;
       flex-wrap: wrap;
       margin-top: 24px;
-      margin-left: 16px;
-      margin-right: 16px;
+      margin-left: 15px;
+      margin-right: 15px;
       margin-bottom: 24px;
-      column-gap: 26px;
+      column-gap: 6px;
       row-gap: 16px;
+
+      @media screen and (min-width:721px) {
+        column-gap: 24px;
+      }
+
+      @media screen and (min-width:1041px) {
+        margin: 40px;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+      }
 
       &elem {
         position: relative;
@@ -66,6 +91,12 @@
           width: 142.57px;
           height: 82.46px;
           border-radius: 10px;
+
+          @media screen and (min-width:1041px) {
+            width: 259px;
+            height: 185px;
+            border-radius: 10px;
+          }
         }
 
         &text {
@@ -84,6 +115,11 @@
           line-height: 27px;
           text-align: center;
           color: #FFFFFF;
+
+          @media screen and (min-width:1041px) {
+            font-size: 30px;
+            line-height: 41px;
+          }
         }
 
       }
