@@ -7,3 +7,7 @@
 input {
   padding: 8px;
 }
+
+p {
+  color: orange;
+}
