@@ -10,22 +10,40 @@
 
 <body>
   <div class="container">
-    <form class="form" action="">
-      <p>Тел. номер</p>
-      <input class="number" type="text" name="" id="number">
-      <p>Цена</p>
-      <input class="price" type="text" name="" id="price">
-      <p>Локация</p>
-      <input class="location" type="text" name="" id="location">
-      <p>Краткое описание</p>
-      <input class="description" type="text" name="" id="description">
-      <p>Регион</p>
-      <input class="region" type="text" name="" id="region">
-      </br>
-      <button class="button" id="button"><b>Отправить</b></button>
-    </form>
+    <p>Тел. номер</p>
+    <input class="number" type="text" name="" id="number">
+    <p>Цена</p>
+    <input class="price" type="text" name="" id="price">
+    <p>Локация</p>
+    <input class="loc" type="text" name="" id="loc">
+    <p>Краткое описание</p>
+    <input class="description" type="text" name="" id="description">
+    <p>Регион</p>
+    <input class="region" type="text" name="" id="region">
+    </br>
+    <button class="button" id="button"><b>Отправить</b></button>
   </div>
   <script src="./formhandler.js"></script>
+  <script>
+
+
+    console.log(number)
+
+
+    button.addEventListener('click',
+      async () => {
+        let resultObj = {
+          phone: number.value,
+          city: region.value,
+          description: description.value,
+          location: loc.value,
+          price: price.value,
+        }
+        console.log(resultObj)
+      }
+    )
+
+  </script>
 </body>
 
 </html>

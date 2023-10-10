@@ -16,7 +16,7 @@ p {
 .button {
   margin-top: 25px;
   padding: 12px;
-  width: 100%;
+  width: 180px;
   background-color: orange;
   color: rgb(255, 255, 255);
 }
