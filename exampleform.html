@@ -22,6 +22,7 @@
     <input class="region" type="text" name="" id="region">
     </br>
     <button class="button" id="button"><b>Отправить</b></button>
+    <div class="sendingresult" id="sendingresult">123</div>
   </div>
 
   <script type="module">
@@ -63,8 +64,8 @@
         oldbase[[...Object.keys(oldbase)].length + 1] = resultObj;
         let newbase = oldbase;
         console.log(newbase)
-
-        await setDoc(doc(db, "datauzcol", 'base'), newbase)
+        console.log(sendingresult.innerText)
+        await setDoc(doc(db, "datauzcol", 'base'), newbase).then(x => sendingresult.innerHTML = `<div style="color:green">Отправлено</div>`)
       }
     )
 
