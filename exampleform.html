@@ -54,12 +54,17 @@
           location: loc.value,
           price: price.value,
         }
+
         let oldbase = await getDoc(doc(db, "datauzcol", 'base')).then(x => x.data())
+
         console.log(resultObj)
         console.log(oldbase)
-        console.log([...Object.keys(oldbase)].length + 1)
+
         oldbase[[...Object.keys(oldbase)].length + 1] = resultObj;
-        console.log(oldbase)
+        let newbase = oldbase;
+        console.log(newbase)
+
+        await setDoc(doc(db, "datauzcol", 'base'), newbase)
       }
     )
 
