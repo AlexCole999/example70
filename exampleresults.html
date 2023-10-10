@@ -10,22 +10,53 @@
 
 <body>
   <div class="container">
-    <form class="form" action="">
-      <p>Тел. номер</p>
-      <input class="number" type="text" name="" id="number">
-      <p>Цена</p>
-      <input class="price" type="text" name="" id="price">
-      <p>Локация</p>
-      <input class="location" type="text" name="" id="location">
-      <p>Краткое описание</p>
-      <input class="description" type="text" name="" id="description">
-      <p>Регион</p>
-      <input class="region" type="text" name="" id="region">
-      </br>
-      <button class="button" id="button"><b>Отправить</b></button>
-    </form>
+    <div id="root"></div>
   </div>
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+    import { getFirestore, getDoc, setDoc, doc, collection } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCu_dkznKgP8ZxVTwvkNbAnGdTluiIO5eU",
+      authDomain: "firstfirebase-04-08-2021.firebaseapp.com",
+      projectId: "firstfirebase-04-08-2021",
+      storageBucket: "firstfirebase-04-08-2021.appspot.com",
+      messagingSenderId: "53473763739",
+      appId: "1:53473763739:web:a641946d7b4760eb33413e",
+      measurementId: "G-GDBP4GBHYF"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    console.log(app)
+
+
+    window.onload = async function () {
+      let root = document.getElementById('root')
+
+      await getDoc(doc(db, "users", 'guest', 'data', 'words'))
+        .then(data => {
+          let resultdata = data.data()
+          console.log(resultdata);
+          root.innerHTML = [...Object.keys(resultdata)]
+            .map(x => `
+            <div>
+              <img src="https://example1.onlinestores.uz/wp-content/uploads/2023/10/icons8-small-60.png" alt="">
+          <div>Слово:${x}</div>
+          <div>Перевод:${resultdata[x].gameword}</div>
+          </div>
+          `)
+        }
+        )
+
+      console.log('loaded', root)
+    }
+
+  </script>
   <script src="./resultshandler.js"></script>
+
 </body>
 
 </html>
