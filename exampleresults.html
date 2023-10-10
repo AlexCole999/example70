@@ -36,22 +36,33 @@
     window.onload = async function () {
       let root = document.getElementById('root')
 
-      await getDoc(doc(db, "users", 'guest', 'data', 'words'))
+      console.log('loaded', root)
+      await getDoc(doc(db, "datauzcol", 'base'))
         .then(data => {
-          let resultdata = data.data()
-          console.log(resultdata);
-          root.innerHTML = [...Object.keys(resultdata)]
-            .map(x => `
+          let resultData = data.data();
+          // root.innerHTML = [...Object.keys(data.data())]
+          //   .map(
+          //     x => 
+          //   )
+          console.log(resultData)
+          root.innerHTML = [...Object.keys(resultData)]
+            .map(x => resultData[x])
+            .map(x =>
+              `
             <div>
               <img src="https://example1.onlinestores.uz/wp-content/uploads/2023/10/icons8-small-60.png" alt="">
-          <div class="resultsrow">Слово:${x}</div>
-          <div class="resultsrow">Перевод:${resultdata[x].gameword}</div>
+          <div class="resultsrow">Телефон:${x.phone}</div>
+          <div class="resultsrow">Цена:${x.price}</div>
+          <div class="resultsrow">Локация:${x.location}</div>
+          <div class="resultsrow">Краткое описание:${x.description}</div>
+          <div class="resultsrow">Регион:${x.city}</div>
           </div>
-          `)
+          `
+
+            )
+          console.log(a)
         }
         )
-
-      console.log('loaded', root)
     }
 
   </script>
@@ -60,3 +71,26 @@
 </body>
 
 </html>
+<!-- 
+city
+"Ташкент"
+(string)
+
+
+description
+"Продаю камаз недорого"
+(string)
+
+
+location
+"Янгиюльский район"
+(string)
+
+
+phone
+"+998880189887"
+(string)
+
+
+price
+"100 000 000" -->
