@@ -23,9 +23,24 @@
     </br>
     <button class="button" id="button"><b>Отправить</b></button>
   </div>
-  <script src="./formhandler.js"></script>
-  <script>
 
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js";
+    import { getFirestore, getDoc, setDoc, doc, collection } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyCu_dkznKgP8ZxVTwvkNbAnGdTluiIO5eU",
+      authDomain: "firstfirebase-04-08-2021.firebaseapp.com",
+      projectId: "firstfirebase-04-08-2021",
+      storageBucket: "firstfirebase-04-08-2021.appspot.com",
+      messagingSenderId: "53473763739",
+      appId: "1:53473763739:web:a641946d7b4760eb33413e",
+      measurementId: "G-GDBP4GBHYF"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
 
     console.log(number)
 
@@ -39,9 +54,19 @@
           location: loc.value,
           price: price.value,
         }
+        let oldbase = await getDoc(doc(db, "datauzcol", 'base')).then(x => x.data())
         console.log(resultObj)
+        console.log(oldbase)
+        console.log([...Object.keys(oldbase)].length + 1)
+        oldbase[[...Object.keys(oldbase)].length + 1] = resultObj;
+        console.log(oldbase)
       }
     )
+
+  </script>
+
+
+
 
   </script>
 </body>
